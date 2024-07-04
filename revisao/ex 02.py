@@ -7,4 +7,4 @@ else:
     cliente02 = cliente // 30
     print(f"{cliente02:.0f} cupons")
     print(f"R$ {cliente % 30:.2f} de saldo")
-    print(f"R$ {(cliente % 30) + 30:.2f} para novo cupom")
+    print(f"R$ {30- (cliente % 30):.2f} para novo cupom")
