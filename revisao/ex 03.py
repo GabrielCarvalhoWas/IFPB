@@ -2,7 +2,7 @@ totalValor = 0
 quantidadeCupons = 0
 maiorValorVendido = 0
 cuponsEntregue = 0
-for vendas in range(3):
+for vendas in range(200):
     cliente = float(input("Digite o valor da venda: "))
     totalValor += cliente
     if cliente < 30:
