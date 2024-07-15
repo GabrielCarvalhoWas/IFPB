@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Representação de Texto</h1>
+    <div class="content">
+        <hr>
+        <br><br>
+
+        <p><strong>1. Diferença entre os códigos ASCII e as code-pages 437 e 850</strong></p>
+        <br><br>
+        <p><strong>ASCII:</strong></p>
+        <p>ASCII (American Standard Code for Information Interchange) é um conjunto de caracteres que utiliza 7 bits para representar 128 caracteres diferentes, incluindo letras maiúsculas e minúsculas, dígitos, pontuações e alguns caracteres de controle. É um padrão universal e o mesmo em todos os computadores.</p>
+        <br>
+        <p><strong>Code Page 437:</strong></p>
+        <p>Também conhecida como a página de código original do IBM PC, CP437 usa 8 bits para representar 256 caracteres. Inclui todos os caracteres ASCII e adiciona caracteres gráficos, símbolos e letras de algumas línguas europeias.</p>
+        <br>
+        <p> <strong>Code Page 850:</strong></p>
+        <p>CP850 é uma extensão do CP437 e também usa 8 bits, mas com uma seleção diferente de caracteres adicionais para melhor suporte a línguas europeias ocidentais. Substitui alguns dos caracteres gráficos do CP437 por letras acentuadas e outros símbolos usados em línguas como o português, o francês e o alemão.</p>
+        <br><br><br>
+        <p ><strong>2. Diferença entre o padrão ISO/IEC-8859-1 e o Windows-1252</strong></p><br><br>
+        <p><strong>ISO/IEC-8859-1:</strong></p>
+        <p>Também conhecido como Latin-1, é um padrão de codificação de caracteres que usa 8 bits para representar 256 caracteres. Abrange as principais línguas da Europa Ocidental e inclui letras acentuadas, caracteres de controle e símbolos.</p>
+        <br>
+        <p><strong>Windows-1252:</strong></p>
+        <p>É uma extensão do ISO-8859-1 usada no sistema operacional Windows. Inclui todos os caracteres do ISO-8859-1 e adiciona caracteres adicionais em posições que são definidas como caracteres de controle no ISO-8859-1. Por exemplo, Windows-1252 adiciona caracteres como os sinais de aspas inteligentes, o símbolo do euro (€) e outros.</p>
+        <br><br><br>
+        <p><strong>3. Explicando o que é Uni code e o Por que ele foi necessário mesmo tendo as code pages específicas de diferentes línguas.</strong></p>
+        <br><br>
+        <p><strong>Unicode:</strong></p>
+        <p>Unicode é um padrão universal de codificação de caracteres que pode representar mais de um milhão de caracteres de quase todas as línguas e sistemas de escrita do mundo, além de símbolos técnicos, matemáticos e de pontuação. <br><br> E também foi necessário pois as code pages específicas eram limitadas e incompatíveis entre si. Cada code page suportava um conjunto limitado de caracteres e frequentemente substituía caracteres de outras línguas. Unicode resolve esses problemas ao fornecer um único conjunto de caracteres que pode representar qualquer texto de qualquer língua, garantindo compatibilidade e consistência.</p>
+        <br><br><br>
+        <p><strong>4. Explicando o que é um code point no Unicode.</strong></p>
+        <br><br>
+        <p>Um code point no Unicode é um número único atribuído a cada caractere no padrão Unicode. Cada code point é escrito como "U+" seguido por um valor hexadecimal. Por exemplo:</p>
+        <p>A letra "A" tem o code point U+0041.</p>
+        <p>O símbolo "€" tem o code point U+20AC.</p>
+        <br><br><br>
+        <p><strong>5. Explicando como devemos escrever um code point.</strong></p>
+        <br><br>
+        <p>Um code point deve ser escrito no formato "U+" seguido por seu valor hexadecimal. Exemplos:</p>
+        <p>U+0041 para a letra "A".</p>
+        <p>U+20AC para o símbolo "€".</p>
+        <br><br><br>
+        <p><strong>6. Diferença entre Unicode e UTF-8.</strong></p>
+        <br><br>
+        <p><strong>Unicode:</strong></p>
+        <p>Unicode é um padrão de codificação que define um conjunto universal de caracteres e atribui a cada caractere um code point.</p>
+        <p><strong>UTF-8:</strong></p>
+        <p>UTF-8 é uma forma específica de codificar esses code points do Unicode em uma sequência de bytes. UTF-8 é eficiente porque usa entre 1 e 4 bytes para cada code point, dependendo do caractere, e é compatível com ASCII. Os primeiros 128 caracteres de UTF-8 são idênticos ao ASCII.</p>
+        <br><br><br>
+    
+    </div>
+</body>
+</html>
