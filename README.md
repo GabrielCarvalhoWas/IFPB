@@ -1,2 +1,3 @@
 # IFPB
-Exercicios proposto durante a faculdade 
+Atividades do primeiro semestre
+
