@@ -139,6 +139,19 @@ footer {
   
 
 }
+footer section.social{
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0;
+}
+
+footer section.social ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 footer section.social a {
   color: #555;
