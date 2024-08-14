@@ -97,7 +97,7 @@ main .service p {
   margin-top: 100px;
 }
 
-.flexbox {
+.box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
