@@ -84,7 +84,13 @@ main .service-description p {
   color: #777;
   font-style: italic;
 }
-
+.box{
+  margin-bottom: 75px;
+  margin-top: 140px;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
 main .service p {
   color: #777;
   font-size: 14px;
