@@ -1,10 +1,23 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+}
 
 body {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  margin: 0px;
 }
 
-
+/* Header */
 header {
   padding: 1px;
   background-image: url(../img/header-bg.jpg);
@@ -14,11 +27,12 @@ header {
   height: 100vh;
   min-height: 400px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-header .intro-text p, header .intro-text h1 {
+header .intro-text p,
+header .intro-text h1 {
   color: #ecece2;
 }
 
@@ -50,14 +64,18 @@ header .intro-text .btn-intro {
 
 .intro-text {
   text-align: center;
+ 
+  
+
 }
 
-
+/* Main */
 main {
   color: #333;
   text-align: center;
-  width: 970px;
+  width: 900px;
   margin: auto;
+
 }
 
 main .service .circle-icon {
@@ -68,12 +86,10 @@ main .service .circle-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
   margin: auto;
-}
 
-.circle-icon i {
-  font-size: 3em;
+
+  border-radius: 50%;
 }
 
 main .service-description h1 {
@@ -84,46 +100,44 @@ main .service-description p {
   color: #777;
   font-style: italic;
 }
-.box{
-  margin-bottom: 75px;
-  margin-top: 140px;
-  display:flex;
-  flex-wrap: wrap;
-  padding: 50px;
-}
+
 main .service p {
   color: #777;
   font-size: 14px;
   line-height: 1.75;
+ 
   margin: auto;
+
+
+}
+* {
+  box-sizing: border-box;
 }
 
 .service-description {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 105px;
 }
 
 .flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 130px;
-  margin-bottom: 80px;
-  gap: 1rem; /* Espaçamento entre os itens */
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  /* flex-wrap: wrap; */
+  margin-top: 151px;
+  margin-bottom: 85px;
 }
 
 .service {
-  flex-basis: calc(33.333% - 1rem); /* Ajuste a largura conforme necessário */
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centralize o conteúdo dentro do item */
-  text-align: center;
+  /* flex-basis: calc(100%/3 - 2rem); */
+  margin-bottom: 40px;
+  padding: 1rem;
 }
 
-
+/* footer */
 footer {
   background-color: #ecece2;
+  
+
 }
 
 footer section.social a {
@@ -143,39 +157,56 @@ footer section.copyright i.fa-heart {
 }
 
 .footer-content {
-  display: flex;
   text-align: center;
-  padding: 60px;
+  display: flex;
+  padding: 40px 15% 60px;
 }
 
-.footer-content > section {
-  flex-basis: calc(33.333% - 1rem);
+
+.footer-content > section{
+  flex-basis: calc(100% / 3);
 }
 
 .social ul {
   display: flex;
   list-style: none;
-  gap: 22px;
-  padding-left: 0;
-  justify-content: center;
+  gap: 25px;
+  padding-right: 15px;
+  
+}
+
+.social ul li a i {
+  border: 3px solid #555;
+  border-radius: 46%;
+  padding: 10px;
+  font-size: 30px;
+
+}
+
+.address p {
+  margin: auto;
+  width: 200px;
+  text-align: center;
 }
 
 .social h1 {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.social ul li {
+.address h1 {
   text-align: center;
 }
 
-.social ul li a i {
-  border: 3px solid gray;
-  padding: 8px;
-  border-radius: 50%;
+.about h1,
+p {
+  text-align: center;
 }
 
-.social ul li a i:hover {
-  color: white;
-  background-color: gray;
+.copyright {
+  text-align: center;
+
+}
+
+.circle-icon i {
+  font-size: 45px;
 }
