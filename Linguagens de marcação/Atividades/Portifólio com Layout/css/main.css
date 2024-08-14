@@ -58,7 +58,6 @@ main {
   text-align: center;
   width: 970px;
   margin: auto;
-  display: flex;
 }
 
 main .service .circle-icon {
@@ -74,7 +73,7 @@ main .service .circle-icon {
 }
 
 .circle-icon i {
-  font-size: 60px;
+  font-size: 3em;
 }
 
 main .service-description h1 {
